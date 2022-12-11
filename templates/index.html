@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}Home {% endblock title %}
+
+{% block body %}
+<div class="container-fluid  px-0 height: auto ">
+  <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/1200x450/?library" class="d-block w-100" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Institute of engineering is one of the Institutes of Tribhuvan University.</h5>
+              <p>Pulchowk Campus is the central campus of the Institute of Engineering. It was established in 1972 (2029 B.S) as one of the constituent campuses of the Institute of Engineering and is situated at the heart of the Lalitpur city at Pulchowk. </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            {% comment %} {% load static %} 
+            <img src="{% static "C:\Users\User\Downloads\Django\Hello\static\bg.jpg" %}" class="d-block w-100" alt="image2"> {% endcomment %}
+            <img src="https://source.unsplash.com/1200x450/?graduate" class="d-block w-100" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Various Progrms offered</h5>
+              <p>Currently, Pulchowk Campus offers bachelor’s level, master’s level, and Ph.D. level programs in different areas of engineering.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            {% comment %} {% load static %} 
+            <img src="{% static "C:\Users\User\Downloads\Django\Hello\static\img3.PNG"%}" class="d-block w-100" alt="..."> {% endcomment %}
+            <img src="https://source.unsplash.com/1200x450/?college" class="d-block w-100" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Well equipped with necessary laboratories with great strength of faculties and staff.</h5>
+              <p>Pulchowk Campus has been awarded the “Best Constituent Campus Award” by Nepal Government, Ministry of Education, Science and Technology in 2019.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+</div>
+
+
+{% endblock body %}
